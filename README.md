@@ -2,7 +2,7 @@
 A simple Java implementation demonstrating common buffer replacement schemes
 
 ## About ##
-I wrote this in November 2016 to solve textbook buffer replacement problems (i.e. "given this stream of pages, how many I/Os occur with this buffer size using this policy?" etc). I had largely forgotten about it but I decided to publish it on GitHub in case any other students of Database courses find it useful. There are also some other extension ideas I thought of that would be interesting and this was a good start. It's also just a fun idea for coding practice in general. 
+I wrote this in November 2016 to solve textbook buffer replacement problems (i.e. "given this stream of pages, how many I/Os occur with this buffer size using this policy?" etc). I had largely forgotten about it but I decided to publish it on GitHub in case any other students of Database courses find it useful.
 
 The program simulates the basic concepts behind a number of buffer replacement policies and records each step of the process, so if you found yourself confused by this mostly-intuitive-yet-often-poorly-explained topic, hopefully seeing them in action will aid your understanding.
 
@@ -38,7 +38,7 @@ Clone the repository and load the files into your IDE of choice.
 
 The main method in the class Main includes an example page sequence and buffer size; it runs these through all the implemented policies and prints the steps to the output. 
 
-At this stage, there is no reading from standard input as I put this all together very quickly and used it briefly as part of my own study; this initial commit simply included my original Java classes as well as some added documentation. I will add input functionality in the near future. In the meantime, you will have to edit the main method to run your own inputs.
+There is no reading from standard input as I put this all together very quickly and used it briefly as part of my own study; this initial commit simply included my original Java classes as well as some added documentation. You will have to edit the main method to run your own inputs.
 
 The steps are printed in the following format:
 - t(Step  Number) : (<CurrentPage, CurrentReferenceValue>), [(<BufferPage1, ReferenceValue1>), (<BufferPage2, ReferenceValue2>), ...], <TotalI/O>
